@@ -1,0 +1,65 @@
+PhotoIdStation/
+│
+├── src/
+│   ├── PhotoIdStation.Web/
+│   │   ├── Controllers/
+│   │   │   ├── BaseController.cs
+│   │   │   ├── HomeController.cs
+│   │   │   ├── OrderController.cs
+│   │   │   ├── PhotoController.cs
+│   │   │   └── AccountController.cs
+│   │   │
+│   │   ├── Views/
+│   │   │   ├── Shared/
+│   │   │   │   ├── _Layout.cshtml
+│   │   │   │   └── Error.cshtml
+│   │   │   ├── Home/
+│   │   │   ├── Order/
+│   │   │   ├── Photo/
+│   │   │   └── Account/
+│   │   │
+│   │   ├── Filters/
+│   │   │   └── RequireSystemEnabledAttribute.cs
+│   │   │
+│   │   ├── Sso/
+│   │   │   ├── HeaderSsoMiddleware.cs
+│   │   │   └── HeaderSsoOptions.cs
+│   │   │
+│   │   ├── App_Start/
+│   │   │   ├── RouteConfig.cs
+│   │   │   ├── FilterConfig.cs
+│   │   │   └── BundleConfig.cs
+│   │   │
+│   │   ├── Content/
+│   │   ├── Scripts/
+│   │   ├── Global.asax
+│   │   └── Startup.cs
+│   │
+│   ├── PhotoIdStation.Domain/
+│   │   ├── Models/
+│   │   │   ├── PhotoOrder.cs
+│   │   │   └── SystemFunction.cs
+│   │   │
+│   │   └── ViewModels/
+│   │       ├── CapturePhotoViewModel.cs
+│   │       ├── ReviewPhotoViewModel.cs
+│   │       ├── PinViewModel.cs
+│   │       └── OrderListViewModel.cs
+│   │
+│   ├── PhotoIdStation.Infrastructure/
+│   │   ├── Repositories/
+│   │   │   ├── PhotoOrderRepository.cs
+│   │   │   └── SystemSettingsRepository.cs
+│   │   │
+│   │   ├── Services/
+│   │   │   ├── AdUserService.cs
+│   │   │   ├── IAdUserService.cs
+│   │   │   ├── IdentityLinkService.cs
+│   │   │   └── IIdentityLinkService.cs
+│   │   │
+│   │   └── Security/
+│   │       └── ClaimsExtensions.cs
+│
+├── README.md
+├── .gitignore
+└── PhotoIdStation.sln
